@@ -312,3 +312,38 @@ button {
     }
 }
 /* End checkbox-wrapper-30 */
+
+/* Header */
+.header {
+    background-color: white;
+    border-bottom: 1px solid #E0E0E0;
+    height: 70px;
+}
+/* End Header */
+
+/* Main */
+.main {
+    display: flex;
+}
+/* End Main */
+
+/* Sider */
+.sider {
+    background-color: white;
+    width: 240px;
+    height: calc(100vh - 70px);
+    overflow: auto;
+    border-right: 1px solid #E0E0E0;
+}
+/* End Sider */
+
+/* Content */
+.content {
+    background-color: #00da28;
+    flex: 1;
+    height: calc(100vh - 70px);
+    overflow: auto;
+    background-color: #F5F6FA;
+    padding: 30px;
+}
+/* End Content */
