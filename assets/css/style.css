@@ -318,6 +318,94 @@ button {
     background-color: white;
     border-bottom: 1px solid #E0E0E0;
     height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.header .inner-left {
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .inner-logo {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.header .inner-logo span:first-child {
+    color: var(--color-main);
+}
+
+.header .inner-logo span:last-child {
+    color: var(--color-text);
+}
+
+.header .inner-right {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    padding-right: 30px;
+}
+
+.header .inner-notify {
+    position: relative;
+}
+
+.header .inner-notify img {
+    height: 25px;
+}
+
+.header .inner-notify span {
+    min-width: 16px;
+    height: 16px;
+    padding: 0 4px;
+    background-color: #F93C65;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -4px;
+    left: 12px;
+}
+
+.header .inner-account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .inner-account img {
+    width: 44px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header .inner-account .inner-text {
+    flex: 1;
+    display: grid;
+    gap: 3px;
+}
+
+.header .inner-account .inner-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: #404040;
+}
+
+.header .inner-account .inner-role {
+    font-weight: 600;
+    font-size: 12px;
+    color: #565656;
 }
 /* End Header */
 
