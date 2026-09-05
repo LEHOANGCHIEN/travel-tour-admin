@@ -423,6 +423,60 @@ button {
     overflow: auto;
     border-right: 1px solid #E0E0E0;
 }
+
+.sider .inner-list {
+    display: grid;
+    padding: 16px 0;
+}
+
+.sider .inner-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    margin: 0 10px 0 24px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-text);
+    border-radius: 6px;
+    position: relative;
+}
+
+.sider .inner-item::before {
+    content: "";
+    width: 9px;
+    height: 100%;
+    display: block;
+    background-color: var(--color-main);
+    position: absolute;
+    top: 0;
+    left: -28.5px;
+    border-radius: 4px ;
+    opacity: 0;
+}
+
+.sider .inner-item.active, .sider .inner-item:hover {
+    background-color: var(--color-main);
+    color: white;
+}
+
+.sider .inner-item.active::before, .sider .inner-item:hover::before {
+    opacity: 1;
+}
+
+.sider .inner-item.active img, .sider .inner-item:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.sider .inner-logout {
+    color: #F93C65;
+}
+
+.sider .inner-line {
+    width: 100%;
+    background-color: #E0E0E0;
+    height: 1px;
+}
 /* End Sider */
 
 /* Content */
