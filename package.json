@@ -8,5 +8,7 @@
   },
   "dependencies": {
     "pug-cli": "^1.0.0-alpha6"
-  }
+  },
+  "repository": "git@gitlab.com:uit-group7962935/project-2.git",
+  "author": "LEHOANGCHIEN <lehoangchien32005@gmail.com>"
 }
