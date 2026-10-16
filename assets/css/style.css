@@ -591,4 +591,111 @@ button {
     margin-top: 0;
     margin-bottom: 30px;
 }
+
+.section-3 .inner-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.section-3 .inner-table thead th {
+    background-color: #F1F4F9;
+    padding: 15px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 14;
+    color: var(--color-text);
+}
+
+.section-3 .inner-table thead th:first-child {
+    border-radius: 12px 0 0 12px;
+}
+
+.section-3 .inner-table thead th:last-child {
+    border-radius: 0 12px 12px 0;
+}
+
+.section-3 .inner-table tbody td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.4);
+    font-weight: 600;
+    font-size: 14;
+    color: var(--color-text);
+}
 /* End Section 3 */
+
+/* Text */
+.text-main {
+    color: var(--color-main);
+}
+
+.text-right {
+    text-align: right !important;
+}
+/* End Text */
+
+/* Tour List */
+.tour-list {
+    display: grid;
+    gap: 10px;
+}
+
+.tour-list .inner-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tour-list .inner-item img {
+    width: 76px;
+    aspect-ratio: 1/1;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.tour-list .inner-item .inner-content {
+    flex: 1;
+}
+
+.tour-list .inner-item .inner-title {
+    font-weight: 600;
+    font-size: 14px;
+    color: (--color-text);
+    margin-bottom: 3px;
+}
+
+.tour-list .inner-item .inner-desc {
+    display: grid;
+    gap: 3px;
+    font-size: 12px;
+    color: (--color-text);
+    margin-bottom: 3px;
+}
+/* End Tour List */
+
+/* Tag */
+.tag {
+    border-radius: 4.5px;
+    padding: 6px 24px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.tag-orange {
+    background-color: rgba(255, 168, 86, 0.2);
+    color: #FFA756;
+    display: inline-block;
+}
+
+.tag-green {
+    background-color: rgba(0, 182, 155, 0.2);
+    color: #00B69B;
+    display: inline-block;
+}
+
+.tag-red {
+    background-color: rgba(239, 55, 38, 0.2);
+    color: #EF3826;
+    display: inline-block;
+}
+/* End Tag */
