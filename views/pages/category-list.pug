@@ -1,0 +1,30 @@
+extends ../layouts/default.pug
+
+block title
+  title Quản lý danh mục
+
+block main 
+  h1.box-title Quản lý danh mục
+
+  //- Section 4
+  .section-4 
+   .inner-wrap
+    .inner-item
+     <i class="fa-solid fa-filter"></i> Bộ lọc
+    .inner-item
+     select
+      option(value="") Trạng thái
+      option(value="active") Hoạt động
+      option(value="inactive") Tạm dừng
+    .inner-item
+     select
+      option(value="") Người tạo
+      option(value="active") Lê Văn A
+      option(value="inactive") Lê Văn B
+    .inner-item
+     input(type="date")
+     span -
+     input(type="date")
+    .inner-item.inner-reset
+     <i class="fa-solid fa-rotate-right"></i> Xoá bộ lọc
+     
