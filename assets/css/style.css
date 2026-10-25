@@ -710,6 +710,10 @@ button {
 .text-right {
     text-align: right !important;
 }
+
+.text-center {
+    text-align: center;
+}
 /* End Text */
 
 /* Tour List */
@@ -1042,3 +1046,91 @@ button {
     cursor: pointer;
 }
 /* End Section 7 */
+
+/* Section 8 */
+.section-8 {
+  background-color: white;
+  border: 1px solid #B9B9B9;
+  border-radius: 14px;
+  padding: 50px;
+}
+
+.section-8 form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.section-8 .inner-two-col {
+  grid-column: span 2;
+}
+
+.section-8 .inner-group label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #606060;
+  margin-bottom: 11px;
+}
+
+.section-8 .inner-group input, .section-8 .inner-group select, .section-8 .inner-group textarea {
+  border: 1px solid #D5D5D5;
+  background-color: #F5F6FA;
+  border-radius: 4px;
+  padding: 6px 14px;
+  padding: 16px 22px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-text);
+  width: 100%;
+}
+
+.section-8 .inner-group textarea {
+  resize: none;
+  height: 160px;
+}
+
+.section-8 .inner-group button {
+  border: 0;
+  background-color: var(--color-main);
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 16px;
+  border-radius: 12px;
+  min-width: 274px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.section-8 .inner-group button:hover {
+  opacity: 1;
+}
+
+.section-8 .inner-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.section-8 .inner-link a {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-main);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .section-8 {
+    padding: 20px;
+  }
+
+  .section-8 form {
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+
+  .section-8 .inner-two-col {
+    grid-column: span 1;
+  }
+}
+/* End Section 8 */
