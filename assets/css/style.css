@@ -983,3 +983,29 @@ button {
     color: #EF3826;
 }
 /* End Section 6 */
+
+/* Section 7 */
+.section-7 {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.section-7 .inner-text {
+    font-weight: 600;
+    font-size: 14px;
+    color: hsla(210, 6%, 13%, 0.6);
+}
+
+.section-7 select {
+    background-color: #FAFBFD;
+    border: 1px solid #D5D5D5;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(32, 34, 36, 0.6);
+    cursor: pointer;
+}
+/* End Section 7 */
