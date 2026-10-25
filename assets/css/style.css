@@ -917,3 +917,69 @@ button {
   align-items: center;
 }
 /* End Section 5 */
+
+/* Section 6 */
+.section-6 table {
+    background-color: white;
+    width: 100%;
+    border: 1px solid #D5D5D5;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.section-6 thead th {
+    background-color: #FCFDFD;
+    padding: 15px 30px;
+    border-bottom: 1px solid #D5D5D5;
+    font-weight: 800;
+    font-size: 14px;
+    color: var(--color-text);
+    text-align: left;
+}
+
+.section-6 tbody tr td {
+    padding: 8px 32px;
+    border-bottom: 1px solid rgba(151, 151, 151, 0.6);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-text);
+}
+
+.section-6 tbody tr td:lastchild {
+    border-bottom: 0;
+}
+
+.section-6 .inner-avatar {
+    width: 60px;
+    aspect-ratio: 1/1;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.section-6 .inner-time {
+    font-size: 12px;
+}
+
+.section-6 .inner-action {
+    display: inline-flex;
+    background-color: #FAFBFD;
+    border-radius: 8px;
+    border: 1px solid #D5D5D5;
+}
+
+.section-6 .inner-action a {
+    padding: 9px 16px;
+    display: inline-block;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    border-right: 1px solid rgba(151, 151, 151, 0.7);
+}
+
+.section-6 .inner-action a:last-child {
+    border-right: 0;
+}
+
+.section-6 .inner-action a.inner-remove {
+    color: #EF3826;
+}
+/* End Section 6 */
