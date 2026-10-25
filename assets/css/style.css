@@ -931,6 +931,18 @@ button {
   align-items: center;
 }
 
+.section-5 .inner-trash {
+  background-color: #EF382633;
+  opacity: 0.9;
+  border-radius: 14px;
+  padding: 24px 30px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #EF3826;
+  display: inline-flex;
+  align-items: center;
+}
+
 @media (max-width: 1200px) {
   .section-5 {
     gap: 15px;
@@ -945,6 +957,10 @@ button {
   }
 
   .section-5 .inner-create {
+    padding: 10px 15px;
+  }
+
+  .section-5 .inner-trash {
     padding: 10px 15px;
   }
 }
@@ -966,7 +982,7 @@ button {
 
 .section-6 thead th {
     background-color: #FCFDFD;
-    padding: 15px 30px;
+    padding: 15px;
     border-bottom: 1px solid #D5D5D5;
     font-weight: 800;
     font-size: 14px;
@@ -975,7 +991,7 @@ button {
 }
 
 .section-6 tbody tr td {
-    padding: 8px 32px;
+    padding: 8px 15px;
     border-bottom: 1px solid rgba(151, 151, 151, 0.6);
     font-weight: 600;
     font-size: 14px;
