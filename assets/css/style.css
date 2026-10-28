@@ -698,7 +698,7 @@ button {
 
 @media (max-width: 576px) {
     .section-3 {
-        padding: 1k5px;
+        padding: 15px;
     }
 }
 /* End Section 3 */
@@ -714,6 +714,10 @@ button {
 
 .text-center {
     text-align: center;
+}
+
+.text-red {
+  color: #EF3826;
 }
 /* End Text */
 
@@ -734,6 +738,10 @@ button {
     aspect-ratio: 1/1;
     border-radius: 6px;
     object-fit: cover;
+}
+
+.tour-list.inner-large .inner-item img {
+  width: 115px;
 }
 
 .tour-list .inner-item .inner-content {
@@ -999,7 +1007,7 @@ button {
     color: var(--color-text);
 }
 
-.section-6 tbody tr td:lastchild {
+.section-6 tbody tr td:last-child {
     border-bottom: 0;
 }
 
@@ -1234,6 +1242,12 @@ button {
   padding: 10px 20px;
   cursor: pointer;
   display: inline-block;
+}
+
+.section-8 .inner-text {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text);
 }
 
 @media (max-width: 768px) {
