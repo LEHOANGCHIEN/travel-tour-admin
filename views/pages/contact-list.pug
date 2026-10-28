@@ -2,66 +2,92 @@ extends ../layouts/default.pug
 include ../mixins/checkbox.pug
 
 block title
-  title Thông tin liên hệ
+  title Quản lý danh mục
 
-block main
-  h1.box-title Thông tin liên hệ
+block main 
+  h1.box-title Quản lý danh mục
 
   //- Section 4
-  .section-4
-    .inner-wrap
-      .inner-item
-        <i class="fa-solid fa-filter"></i> Bộ lọc
-      .inner-item
-        input(type="date")
-        span -
-        input(type="date")
-      .inner-item.inner-reset
-        <i class="fa-solid fa-rotate-left"></i> Xóa bộ lọc
+  .section-4 
+   .inner-wrap
+    .inner-item
+     <i class="fa-solid fa-filter"></i> Bộ lọc
+    .inner-item
+     select
+      option(value="") Trạng thái
+      option(value="active") Hoạt động
+      option(value="inactive") Tạm dừng
+    .inner-item
+     select
+      option(value="") Người tạo
+      option(value="active") Lê Văn A
+      option(value="inactive") Lê Văn B
+    .inner-item
+     input(type="date")
+     span -
+     input(type="date")
+    .inner-item.inner-reset
+     <i class="fa-solid fa-rotate-right"></i> Xoá bộ lọc
   //- End Section 4
 
   //- Section 5
   .section-5
-    form.inner-status
-      .inner-item
-        select
-          option(value="") -- Hành động --
-          option(value="") Hoạt động
-          option(value="") Tạm dừng
-          option(value="") Xóa
-      .inner-item
-        button Áp dụng
-    form.inner-search
-      button <i class="fa-solid fa-magnifying-glass"></i>
-      input(type="text" placeholder="Tìm kiếm")
+   form.inner-status(action="")
+    .inner-item
+      select
+        option(value="") --Hành động--
+        option(value="") Hoạt động
+        option(value="") Tạm dừng
+        option(value="") Xoá
+    .inner-item
+     button Áp dụng
+   form.inner-search
+    button <i class="fa-solid fa-magnifying-glass"></i>
+    input(type="text" placeholder="Tìm kiếm")
+   a.inner-create(href="#") Tạo mới
   //- End Section 5
 
   //- Section 6
-  .section-6
-    table
-      thead
-        tr
-          th
-            +checkbox-30("", "")
-          th Email
-          th Ngày tạo
-          th Hành động
-      tbody
-        tr
-          td
-            +checkbox-30("", "")
-          td levana@gmail.com
-          td 16:40 - 12/12/2024
-          td
-            .inner-action
-              a(href="#" class="inner-remove") <i class="fa-regular fa-trash-can"></i>
+  .section-6 
+   table
+    thead
+     tr
+      th
+       +checkbox-30()
+      th Tên danh mục
+      th Ảnh đại diện
+      th Vị trí
+      th Trạng thái
+      th Tạo bởi
+      th Cập nhật bởi
+      th Hành động
+    tbody
+     tr
+      td
+       +checkbox-30("", "")
+      td Danh mục 1
+      td
+       img(src="assets/images/demo-tour-1.png" class="inner-avatar")
+      td 1
+      td 
+       tag.tag-green Hoạt động
+      td 
+       div Lê Văn A
+       .inner-time 16:30 - 20/10/2024
+      td 
+       div Lê Văn B
+       .inner-time 16:30 - 20/10/2024
+      td 
+       .inner-action
+        a(href="#") <i class="fa-solid fa-pen-to-square"></i>
+        a(href="#" class="inner-remove") <i class="fa-solid fa-trash"></i>
   //- End Section 6
 
   //- Section 7
-  .section-7
+  .section-7 
     .inner-text Hiển thị 1 - 9 của 78
     select
-      option(value="") Trang 1
-      option(value="") Trang 2
-      option(value="") Trang 3
+     option(value="") Trang 1
+     option(value="") Trang 2
+     option(value="") Trang 3
   //- End Section 7

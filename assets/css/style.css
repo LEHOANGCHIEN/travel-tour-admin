@@ -1277,3 +1277,44 @@ button {
   }
 }
 /* End Section 8 */
+
+/* Section 9 */
+.section-9 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.section-9 .inner-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: white;
+  border-radius: 14px;
+  padding: 25px;
+}
+
+.section-9 .inner-item img {
+  height: 70px;
+  width: auto;
+}
+
+.section-9 .inner-item span {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-text);
+}
+
+@media (max-width: 1200px) {
+  .section-9 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-9 {
+    grid-template-columns: 1fr;
+  }
+}
+/* End Section 9 */
