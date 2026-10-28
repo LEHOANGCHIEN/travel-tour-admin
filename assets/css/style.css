@@ -1318,3 +1318,58 @@ button {
   }
 }
 /* End Section 9 */
+
+/* Section 10 */
+.section-10 {
+  background-color: white;
+  border: 1px solid #B9B9B9;
+  border-radius: 14px;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-10 .inner-image {
+  width: 390px;
+  height: auto;
+  margin-bottom: 60px;
+}
+
+.section-10 .inner-text {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-text);
+  margin-bottom: 30px;
+}
+
+.section-10 .inner-link {
+  display: inline-block;
+  background-color: var(--color-main);
+  opacity: 0.9;
+  border-radius: 8px;
+  padding: 15px 104px;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .section-10 {
+    padding: 40px 20px;
+  }
+
+  .section-10 .inner-image {
+    width: 200px;
+    margin-bottom: 30px;
+  }
+
+  .section-10 .inner-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .section-10 .inner-link {
+    padding: 15px 40px;
+    font-size: 16px;
+  }
+}
+/* End Section 10 */
